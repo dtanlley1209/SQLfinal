@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($user && password_verify($password, $user['Password'])) {
         $_SESSION['user'] = $user['Username'];
+		$_SESSION['memberId'] = $user['MemberID'];
         header("Location: dashboard.php");
         exit;
     } else {

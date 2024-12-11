@@ -12,12 +12,13 @@ require 'db_config.php';
 $username = $_SESSION['user'];
 
 // Get user details from the database
-$sql = "SELECT Username, Email FROM members WHERE Username = ?";
+$sql = "SELECT * FROM members WHERE Username = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $username);
 $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();
+
 
 if (!$user) {
     // If no user found, redirect to login page
@@ -42,8 +43,8 @@ if (!$user) {
                 <h5 class="card-title">Your Profile</h5>
                 <p><strong>Username:</strong> <?php echo htmlspecialchars($user['Username']); ?></p>
                 <p><strong>Email:</strong> <?php echo htmlspecialchars($user['Email']); ?></p>
-                <p><strong>Phone:</strong> N/A</p> <!-- Placeholder if you don't have phone -->
-                <p><strong>Address:</strong> N/A</p> <!-- Placeholder if you don't have address -->
+                <p><strong>Phone:</strong> <?php echo htmlspecialchars($user['Phone']); ?></p> <!-- Placeholder if you don't have phone -->
+                <p><strong>Address:</strong> <?php echo htmlspecialchars($user['Address']); ?></p> <!-- Placeholder if you don't have address -->
             </div>
         </div>
 

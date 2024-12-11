@@ -95,7 +95,7 @@ CREATE TABLE `members` (
   `Phone` varchar(15) DEFAULT NULL,
   `Address` text,
   PRIMARY KEY (`MemberID`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -104,7 +104,7 @@ CREATE TABLE `members` (
 
 LOCK TABLES `members` WRITE;
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
-INSERT INTO `members` VALUES (2,'admin','$2y$10$wq746a0dn0wmcPzHXfEMhe80xZQc9/1PBJID9Ri4AHbfmwT9xn9Xi','admin@gmail.com',1,3,'2022-03-27','',NULL,NULL),(5,'test1','$2y$10$GlhvBkMPi19b3tGoGUzEzOu3GDazDogOzd.eoAvNc0ID8PB9n7E7K','test@gmail.com',0,3,'2022-03-27','',NULL,NULL),(6,'test2','$2y$10$Q.624Ef8zdpsWryToDFJZONz7XopgMQZwQeLXwzFUBa07/DNdFfUO','test123@gmail.com',0,3,'2022-03-27','',NULL,NULL),(7,'test3','$2y$10$YZJ3hA4zgVjaKdMJHR5EWuUk8ujPDlqXP7IzEd.kD9.lLcUAbH5Su','test3@gmail.com',0,3,'2022-03-27','',NULL,NULL),(8,'test4','$2y$10$07FJA8uhFxA0aAnMBoP59uAs4CNhyQ/yHqIT69UgrH6l2nsZGa5Y.','test4@gmail.com',0,3,'2022-03-27','',NULL,NULL),(9,'test5','$2y$10$CYsI.DmaPc5EXpjRRfQTIeYkbC0ngtucxVHRHgV5SJ0z1/2cwB4mu','test5@gmail.com',0,3,'2022-03-25','',NULL,NULL),(10,'test6','$2y$10$ieSbXKrOc4tmF.kSUtTCyO69Xp13lNCs.Fl.agTLYm3N0FAKdRWkC','test6@gmail.com',0,3,'2022-03-24','',NULL,NULL),(15,'test7','$2y$10$wYZtt0RY/443JBq5UO0iGuDbUia/lIEWI0/iSGrDJ4Yrv3WpD5J1.','test7@gmail.com',0,3,'2022-03-25','',NULL,NULL),(16,'test8','$2y$10$qYaWx7z6VHxgBtQxLm7leuo2sKv76Cg28UhmJaKZiF0eHXiMMcKCa','test8@gmail.com',0,3,'2022-03-27','',NULL,NULL),(19,'test9','$2y$10$VDEN6GE/49oMJ6GIwCL/2Op6K6iTeuZbbf7QFn8Oj7WTPzTG3E2Nq','test9@gmail.com',0,3,'2022-03-26','',NULL,NULL),(22,'admin2','$2y$10$4DtSUM142G/dEiZOfO2xS.1VptEJ0rzRh1AFM6EH/Wf.1MediuCUm','admin@mail.com',1,3,'2022-03-27','',NULL,NULL);
+INSERT INTO `members` VALUES (2,'admin','$2y$10$wq746a0dn0wmcPzHXfEMhe80xZQc9/1PBJID9Ri4AHbfmwT9xn9Xi','admin@gmail.com',1,3,'2022-03-27','the fuck','1234567','桃園市八德區大信里30鄰大興路1045巷30號'),(5,'test1','$2y$10$GlhvBkMPi19b3tGoGUzEzOu3GDazDogOzd.eoAvNc0ID8PB9n7E7K','test@gmail.com',0,3,'2022-03-27','',NULL,NULL),(6,'test2','$2y$10$Q.624Ef8zdpsWryToDFJZONz7XopgMQZwQeLXwzFUBa07/DNdFfUO','test123@gmail.com',0,3,'2022-03-27','',NULL,NULL),(7,'test3','$2y$10$YZJ3hA4zgVjaKdMJHR5EWuUk8ujPDlqXP7IzEd.kD9.lLcUAbH5Su','test3@gmail.com',0,3,'2022-03-27','',NULL,NULL),(8,'test4','$2y$10$07FJA8uhFxA0aAnMBoP59uAs4CNhyQ/yHqIT69UgrH6l2nsZGa5Y.','test4@gmail.com',0,3,'2022-03-27','',NULL,NULL),(9,'test5','$2y$10$CYsI.DmaPc5EXpjRRfQTIeYkbC0ngtucxVHRHgV5SJ0z1/2cwB4mu','test5@gmail.com',0,3,'2022-03-25','',NULL,NULL),(10,'test6','$2y$10$ieSbXKrOc4tmF.kSUtTCyO69Xp13lNCs.Fl.agTLYm3N0FAKdRWkC','test6@gmail.com',0,3,'2022-03-24','',NULL,NULL),(15,'test7','$2y$10$wYZtt0RY/443JBq5UO0iGuDbUia/lIEWI0/iSGrDJ4Yrv3WpD5J1.','test7@gmail.com',0,3,'2022-03-25','',NULL,NULL),(16,'test8','$2y$10$qYaWx7z6VHxgBtQxLm7leuo2sKv76Cg28UhmJaKZiF0eHXiMMcKCa','test8@gmail.com',0,3,'2022-03-27','',NULL,NULL),(19,'test9','$2y$10$VDEN6GE/49oMJ6GIwCL/2Op6K6iTeuZbbf7QFn8Oj7WTPzTG3E2Nq','test9@gmail.com',0,3,'2022-03-26','',NULL,NULL),(22,'admin2','$2y$10$4DtSUM142G/dEiZOfO2xS.1VptEJ0rzRh1AFM6EH/Wf.1MediuCUm','admin@mail.com',1,3,'2022-03-27','',NULL,NULL),(29,'jason','$2y$10$Oc31.TraKSPVlDDHZ6ZKGe9ExLep04lvuPfkvDQ9Rm.ccNRiG7rz2','jason@gmail.com',0,NULL,'2024-12-11','jason','123456789','嘉義南華大學');
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -158,7 +158,7 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`OrderID`),
   KEY `MemberID` (`MemberID`),
   CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`MemberID`) REFERENCES `members` (`MemberID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -167,6 +167,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (1,2,'2024-12-11 12:42:14',5991,'Pending'),(2,2,'2024-12-11 12:45:15',5991,'Pending'),(3,2,'2024-12-11 12:46:18',15189,'Pending'),(4,29,'2024-12-11 12:48:56',3299,'Pending');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,4 +206,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-12-06 20:32:05
+-- Dump completed on 2024-12-11 19:53:58
