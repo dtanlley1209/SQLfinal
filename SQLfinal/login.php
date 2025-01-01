@@ -16,8 +16,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($user && password_verify($password, $user['Password'])) {
         $_SESSION['user'] = $user['Username'];
 		$_SESSION['memberId'] = $user['MemberID'];
-        header("Location: dashboard.php");
-        exit;
+		$_SESSION['role'] = $user['PrivilegeLevel'];
+		if($_SESSION['role']==1){
+			header("Location: manager_dashboard.php");
+			exit;
+		}
+		else{
+			header("Location: dashboard.php");
+			exit;
+		}
     } else {
         echo "Invalid username or password.";
     }

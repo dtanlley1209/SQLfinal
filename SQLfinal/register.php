@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // 插入新用戶資料到資料庫
-    $sql = "INSERT INTO members (Username, Password, Email, FullName, Phone, Address, RegisteredDate) 
+    $sql = "INSERT INTO members (Username, Password, Email, FullName, Phone, Address, RegisteredDate)
             VALUES (?, ?, ?, ?, ?, ?,now())";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ssssss", $username, $hashedPassword, $email, $fullName, $phone, $address);

@@ -51,8 +51,9 @@ if (!$user) {
         <!-- Add links for the user -->
         <div class="mt-3">
             <a href="edit_profile.php" class="btn btn-warning">Edit Profile</a>
+			<a href="orders.php" class="btn btn-warning">Orders Management</a>
             <a href="logout.php" class="btn btn-danger">Logout</a>
-			<a href="http://127.0.0.1/SQLfinal/" class="btn btn-danger">Go to Home</a>
+			<a href="index.php" class="btn btn-danger">Go to Home</a>
         </div>
     </div>
 </body>
